@@ -8,6 +8,31 @@ The lab was designed to simulate a real-world enterprise environment and include
 
 The objective of this lab was to gain hands-on experience with Windows Server administration, Active Directory infrastructure management, and troubleshooting in a controlled virtual environment.
 
+## Lab Architecture Diagram
+
+```text
+                 +------------------+
+                 |      DC01        |
+                 | Primary Domain   |
+                 | Controller       |
+                 +--------+---------+
+                          |
+            Active Directory / DNS
+                          |
+                 +--------+---------+
+                 |      BDC01       |
+                 | Additional DC    |
+                 | Replication      |
+                 +--------+---------+
+                          |
+          --------------------------------
+          |                              |
+ +--------+--------+            +--------+--------+
+ |    CLIENT01     |            |    CLIENT02     |
+ | Domain Joined   |            | Domain Joined   |
+ +-----------------+            +-----------------+
+```
+
 ---
 
 # Lab Environment
