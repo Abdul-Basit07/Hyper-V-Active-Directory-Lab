@@ -33,7 +33,9 @@ The objective of this lab was to gain hands-on experience with Windows Server ad
  +-----------------+            +-----------------+
 ```
 
+
 ---
+
 
 # Lab Environment
 
